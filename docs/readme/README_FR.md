@@ -1,3 +1,5 @@
+> **VoiceStudio by Transformaiton.com.** This file is an upstream community translation and is not the maintained guide. Use the [English README](../../README.md). Website: [transformaiton.com](https://transformaiton.com/) · [info@transformaiton.com](mailto:info@transformaiton.com).
+
 <div align="center">
   <h1><sub><img src="../../docs/logo.png" alt="" width="36" height="36" /></sub> VoiceStudio</h1>
   <p>
@@ -10,12 +12,12 @@
   <h3>Clonez et créez des voix, doublez, dictez, transcrivez et produisez des narrations dans 646 langues.</h3>
   <p>Fonctionne sur votre ordinateur portable, ordinateur de bureau, serveurs, téléphone, tablettes et plus encore</p>
   <p>
-    <a href="https://voicestudio.sh/?utm_source=github&utm_medium=readme&utm_campaign=project">Site web</a> ·
+    <a href="https://transformaiton.com/">Site web</a> ·
     <a href="https://github.com/debpalash/VoiceStudio/releases/latest">Télécharger</a> ·
     <a href="#get-started">Bien démarrer</a> ·
     <a href="#documentation">Documentation</a> ·
-    <a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project">VoiceStudio Pro</a> ·
-    <a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project">VoiceStudio Cloud</a>
+    <a href="https://transformaiton.com/">VoiceStudio Pro</a> ·
+    <a href="https://transformaiton.com/">VoiceStudio Cloud</a>
   </p>
   <!-- README_LANGUAGES_START -->
   <a id="readme-languages"></a>
@@ -55,8 +57,8 @@
 <p align="center">
   <a href="https://github.com/debpalash/VoiceStudio/releases/latest"><img src="https://img.shields.io/badge/T%C3%A9l%C3%A9charger-993f61?style=for-the-badge&amp;logo=github&amp;logoColor=ffffff" alt="Télécharger" height="24" /></a>
   <a href="#get-started"><img src="https://img.shields.io/badge/Bien%20d%C3%A9marrer-27272a?style=for-the-badge" alt="Bien démarrer" height="24" /></a>
-  <a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=hero-badge"><img src="https://img.shields.io/badge/VoiceStudio%20Pro-27272a?style=for-the-badge" alt="VoiceStudio Pro" height="24" /></a>
-  <a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=hero-badge"><img src="https://img.shields.io/badge/VoiceStudio%20Cloud-27272a?style=for-the-badge" alt="VoiceStudio Cloud" height="24" /></a>
+  <a href="https://transformaiton.com/"><img src="https://img.shields.io/badge/VoiceStudio%20Pro-27272a?style=for-the-badge" alt="VoiceStudio Pro" height="24" /></a>
+  <a href="https://transformaiton.com/"><img src="https://img.shields.io/badge/VoiceStudio%20Cloud-27272a?style=for-the-badge" alt="VoiceStudio Cloud" height="24" /></a>
 </p>
 
 <a id="what-you-can-do"></a>
@@ -117,7 +119,7 @@ Tout ce qui précède est gratuit, tourne sur ton propre matériel et ne demande
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section"><img src="../assets/voicestudio-pro.svg" alt="" width="56" height="56" align="middle" /></a>&nbsp;&nbsp;<strong><a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section">VoiceStudio Pro</a></strong><br /><br />
+      <a href="https://transformaiton.com/"><img src="../assets/voicestudio-pro.svg" alt="" width="56" height="56" align="middle" /></a>&nbsp;&nbsp;<strong><a href="https://transformaiton.com/">VoiceStudio Pro</a></strong><br /><br />
       Pour le travail client rémunéré sur plusieurs machines.
       <ul>
         <li>Une licence commerciale pour ton travail client, envoyée par e-mail</li>
@@ -126,10 +128,10 @@ Tout ce qui précède est gratuit, tourne sur ton propre matériel et ne demande
         <li>Les nouvelles fonctionnalités et corrections en premier</li>
       </ul>
       <sub>Version à code fermé, compte requis, remboursement intégral sous 7 jours. L’app AGPL-3.0 reste gratuite, y compris pour un usage commercial selon ses conditions.</sub><br /><br />
-      <strong><a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section">Voir les offres Pro →</a></strong>
+      <strong><a href="https://transformaiton.com/">Voir les offres Pro →</a></strong>
     </td>
     <td width="50%" valign="top">
-      <a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section"><img src="../assets/voicestudio-cloud.svg" alt="" width="56" height="56" align="middle" /></a>&nbsp;&nbsp;<strong><a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section">VoiceStudio Cloud</a></strong><br /><br />
+      <a href="https://transformaiton.com/"><img src="../assets/voicestudio-cloud.svg" alt="" width="56" height="56" align="middle" /></a>&nbsp;&nbsp;<strong><a href="https://transformaiton.com/">VoiceStudio Cloud</a></strong><br /><br />
       Une API hébergée de voix et de doublage, bientôt disponible. Aucun GPU nécessaire.
       <ul>
         <li>Synthèse vocale, création de voix et clonage de voix avec consentement</li>
@@ -138,7 +140,7 @@ Tout ce qui précède est gratuit, tourne sur ton propre matériel et ne demande
         <li>Des tâches longues qui tournent toutes seules</li>
       </ul>
       <sub>Pas encore disponible : rejoins l’accès anticipé pour obtenir des crédits d’utilisation gratuits. L’app de bureau reste gratuite et locale.</sub><br /><br />
-      <strong><a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section">Rejoindre l’accès anticipé à Cloud →</a></strong>
+      <strong><a href="https://transformaiton.com/">Rejoindre l’accès anticipé à Cloud →</a></strong>
     </td>
   </tr>
 </table>

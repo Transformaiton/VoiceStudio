@@ -1,3 +1,5 @@
+> **VoiceStudio by Transformaiton.com.** This file is an upstream community translation and is not the maintained guide. Use the [English README](../../README.md). Website: [transformaiton.com](https://transformaiton.com/) · [info@transformaiton.com](mailto:info@transformaiton.com).
+
 <div align="center">
   <h1><sub><img src="../../docs/logo.png" alt="" width="36" height="36" /></sub> VoiceStudio</h1>
   <p>
@@ -10,12 +12,12 @@
   <h3>646개 언어로 음성 복제, 보이스 디자인, 더빙, 받아쓰기, 전사, 내레이션을 만드세요.</h3>
   <p>노트북, 데스크톱, 서버, 휴대폰, 태블릿 등에서 실행됩니다</p>
   <p>
-    <a href="https://voicestudio.sh/?utm_source=github&utm_medium=readme&utm_campaign=project">웹사이트</a> ·
+    <a href="https://transformaiton.com/">웹사이트</a> ·
     <a href="https://github.com/debpalash/VoiceStudio/releases/latest">내려받기</a> ·
     <a href="#시작하기">시작 안내</a> ·
     <a href="#문서">문서</a> ·
-    <a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project">VoiceStudio Pro</a> ·
-    <a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project">VoiceStudio Cloud</a>
+    <a href="https://transformaiton.com/">VoiceStudio Pro</a> ·
+    <a href="https://transformaiton.com/">VoiceStudio Cloud</a>
   </p>
   <!-- README_LANGUAGES_START -->
   <a id="readme-languages"></a>
@@ -56,8 +58,8 @@
 <p align="center">
   <a href="https://github.com/debpalash/VoiceStudio/releases/latest"><img src="https://img.shields.io/badge/%EB%82%B4%EB%A0%A4%EB%B0%9B%EA%B8%B0-993f61?style=for-the-badge&amp;logo=github&amp;logoColor=ffffff" alt="내려받기" height="24" /></a>
   <a href="#시작하기"><img src="https://img.shields.io/badge/%EC%8B%9C%EC%9E%91%20%EC%95%88%EB%82%B4-27272a?style=for-the-badge" alt="시작 안내" height="24" /></a>
-  <a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=hero-badge"><img src="https://img.shields.io/badge/VoiceStudio%20Pro-27272a?style=for-the-badge" alt="VoiceStudio Pro" height="24" /></a>
-  <a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=hero-badge"><img src="https://img.shields.io/badge/VoiceStudio%20Cloud-27272a?style=for-the-badge" alt="VoiceStudio Cloud" height="24" /></a>
+  <a href="https://transformaiton.com/"><img src="https://img.shields.io/badge/VoiceStudio%20Pro-27272a?style=for-the-badge" alt="VoiceStudio Pro" height="24" /></a>
+  <a href="https://transformaiton.com/"><img src="https://img.shields.io/badge/VoiceStudio%20Cloud-27272a?style=for-the-badge" alt="VoiceStudio Cloud" height="24" /></a>
 </p>
 
 <a id="what-you-can-do"></a>
@@ -118,7 +120,7 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section"><img src="../assets/voicestudio-pro.svg" alt="" width="56" height="56" align="middle" /></a>&nbsp;&nbsp;<strong><a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section">VoiceStudio Pro</a></strong><br /><br />
+      <a href="https://transformaiton.com/"><img src="../assets/voicestudio-pro.svg" alt="" width="56" height="56" align="middle" /></a>&nbsp;&nbsp;<strong><a href="https://transformaiton.com/">VoiceStudio Pro</a></strong><br /><br />
       여러 대의 컴퓨터로 유료 클라이언트 작업을 하는 분께.
       <ul>
         <li>클라이언트 작업용 상업용 라이선스를 이메일로 전달</li>
@@ -127,10 +129,10 @@
         <li>새 기능과 수정 사항을 먼저 이용</li>
       </ul>
       <sub>비공개 소스 빌드, 계정 필요, 7일 내 전액 환불. AGPL-3.0 앱은 해당 조건에 따른 상업적 사용을 포함해 계속 무료입니다.</sub><br /><br />
-      <strong><a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section">Pro 요금제 보기 →</a></strong>
+      <strong><a href="https://transformaiton.com/">Pro 요금제 보기 →</a></strong>
     </td>
     <td width="50%" valign="top">
-      <a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section"><img src="../assets/voicestudio-cloud.svg" alt="" width="56" height="56" align="middle" /></a>&nbsp;&nbsp;<strong><a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section">VoiceStudio Cloud</a></strong><br /><br />
+      <a href="https://transformaiton.com/"><img src="../assets/voicestudio-cloud.svg" alt="" width="56" height="56" align="middle" /></a>&nbsp;&nbsp;<strong><a href="https://transformaiton.com/">VoiceStudio Cloud</a></strong><br /><br />
       호스팅형 음성 및 더빙 API, 곧 출시됩니다. GPU가 필요 없습니다.
       <ul>
         <li>음성 합성, 음성 디자인, 동의 기반 음성 복제</li>
@@ -139,7 +141,7 @@
         <li>알아서 실행되는 긴 작업</li>
       </ul>
       <sub>아직 이용할 수 없습니다. 얼리 액세스에 참여하면 무료 사용 크레딧을 받습니다. 데스크톱 앱은 계속 무료이며 로컬에서 실행됩니다.</sub><br /><br />
-      <strong><a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section">Cloud 얼리 액세스 참여 →</a></strong>
+      <strong><a href="https://transformaiton.com/">Cloud 얼리 액세스 참여 →</a></strong>
     </td>
   </tr>
 </table>

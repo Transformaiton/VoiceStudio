@@ -21,11 +21,25 @@ a network, you must also offer those users the complete corresponding source
 code of your modified version under these same AGPL-3.0 terms. See the full
 text in [`LICENSE`](LICENSE).
 
-Commercial use under the AGPL-3.0 is free. What is paid is a **commercial
-license** for organizations that want to embed VoiceStudio in a closed-source or
-proprietary product or service without the AGPL-3.0 copyleft obligations, and
-the VoiceStudio Pro features. See the plans at <https://voicestudio.sh/pro>; for
-other inquiries contact `hi@voicestudio.sh`.
+Commercial use under the AGPL-3.0 is free. The upstream project also offers a
+separate commercial licence for organizations that want to embed VoiceStudio
+in a closed-source or proprietary product without the AGPL-3.0 obligations.
+That offer is the upstream project’s, at <https://voicestudio.sh/pro>. This
+Transformaiton.com copy does not sell that licence and does not change these
+terms. Upstream inquiries still go to `hi@voicestudio.sh`.
+
+## Modifications by Transformaiton.com
+
+Modified by Transformaiton.com on 16 November 2026. This public copy adds an
+English customer guide (the repository README, `docs/INSTALL.md`, and
+`docs/VOICE-CLONING-GUIDE.md`) for local voice cloning. The copyright notice
+above, the AGPL-3.0 text in [`LICENSE`](LICENSE), and the copyright notices in
+the source are unchanged. Published at
+<https://github.com/Transformaiton/VoiceStudio>. The original project is
+<https://github.com/debpalash/VoiceStudio>. Support for this copy:
+`info@transformaiton.com` and <https://transformaiton.com/>.
+
+Only clone a voice you own or have permission to use.
 
 Contributors license their contributions to Yupcha Softwares Private Limited,
 the company that maintains VoiceStudio, under the

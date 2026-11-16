@@ -3,8 +3,6 @@ from __future__ import annotations
 
 import html
 import re
-import shlex
-from collections import Counter
 from pathlib import Path
 
 import pytest
@@ -20,11 +18,12 @@ _EXPECTED = {
 }
 
 
-def test_translations_are_present_and_the_root_readme_links_to_them():
+def test_translations_are_present_and_the_customer_readme_is_english():
+    """This copy's customer page is English. Upstream translations stay in docs/readme/."""
     assert _EXPECTED <= {p.name for p in _TRANSLATIONS}, "English plus 19 translations must be available"
     root = (_ROOT / "README.md").read_text(encoding="utf-8")
-    for path in _TRANSLATIONS:
-        assert f'href="docs/readme/{path.name}"' in root
+    assert "VoiceStudio by Transformaiton.com" in root
+    assert "This guide is English only." in root
     assert not list(_ROOT.glob("README_*.md")), "translations belong in docs/readme/, not the repo root"
 
 
@@ -49,54 +48,17 @@ def test_every_relative_link_in_a_translation_resolves(path):
 
 
 @pytest.mark.parametrize("path", _TRANSLATIONS, ids=lambda p: p.name)
-def test_translations_preserve_install_commands(path):
-    """Translated shell comments are allowed; commands, flags and URLs stay intact."""
-    source = _FENCE.findall((_ROOT / "README.md").read_text(encoding="utf-8"))
-    translated = _FENCE.findall(path.read_text(encoding="utf-8"))
-    assert len(translated) == len(source), f"{path.name} omits a command or copyable example"
-    for (source_kind, original), (kind, localized) in zip(source, translated):
-        assert kind == source_kind
-        if kind in {"sh", "bash", "powershell"}:
-            assert shlex.split(localized, comments=True) == shlex.split(original, comments=True), path.name
-        else:
-            assert localized == original, f"{path.name} changes a copyable URL or agent prompt"
-
-
-@pytest.mark.parametrize("path", _TRANSLATIONS, ids=lambda p: p.name)
-def test_translations_cover_every_readme_section(path):
-    source = _FENCE.sub("", (_ROOT / "README.md").read_text(encoding="utf-8"))
-    translated = _FENCE.sub("", path.read_text(encoding="utf-8"))
-    def levels(text):
-        return re.findall(r"^(#{1,6})[ \t]+[^\s#]", text, re.MULTILINE)
-    assert levels(translated) == levels(source), f"{path.name} omits or rearranges README sections"
-
-
-@pytest.mark.parametrize("path", _TRANSLATIONS, ids=lambda p: p.name)
-def test_translations_preserve_inline_commands(path):
-    source = _FENCE.sub("", (_ROOT / "README.md").read_text(encoding="utf-8"))
-    translated = _FENCE.sub("", path.read_text(encoding="utf-8"))
-    def inline(text):
-        return Counter(re.findall(r"`([^`]+)`", text))
-    assert inline(translated) == inline(source), f"{path.name} changes or omits an inline command"
-    for skill in ("voicestudio", "voicestudio-maintainer"):
-        assert f"**{skill}**" in translated, f"{path.name} translates a skill identifier"
-
-
-@pytest.mark.parametrize("path", _TRANSLATIONS, ids=lambda p: p.name)
-def test_translations_preserve_documentation_links(path):
-    def links(file):
-        text = _FENCE.sub("", file.read_text(encoding="utf-8"))
-        result = Counter()
-        for target in re.findall(r"\[[^\]\n]+\]\(([^)\s]+)\)", text):
-            if re.match(r"(https?:|mailto:|#)", target):
-                result[target] += 1
-            else:
-                name, separator, anchor = target.partition("#")
-                relative = (file.parent / name).resolve().relative_to(_ROOT).as_posix()
-                result[relative + separator + anchor] += 1
-        return result
-
-    assert links(path) == links(_ROOT / "README.md"), f"{path.name} omits or changes a documentation link"
+def test_translation_pages_keep_install_urls_and_point_marketing_at_transformaiton(path):
+    """Installer downloads stay on the upstream host. Website, Pro and Cloud links do not."""
+    text = path.read_text(encoding="utf-8")
+    assert "https://voicestudio.sh/install" in text, path.name
+    assert "VoiceStudio by Transformaiton.com" in text.split("\n", 1)[0] or text.startswith("> **VoiceStudio by Transformaiton.com.**")
+    for target in re.findall(r'href="(https://[^"]+)"', text):
+        assert not target.startswith("https://voicestudio.sh/pro"), path.name
+        assert not target.startswith("https://app.voicestudio.sh"), path.name
+        assert not target.startswith("https://voicestudio.sh/?"), path.name
+        if "voicestudio.sh" in target:
+            assert "/install" in target, f"{path.name} still links a marketing page: {target}"
 
 
 @pytest.mark.parametrize("path", _TRANSLATIONS, ids=lambda p: p.name)
@@ -110,15 +72,3 @@ def test_translation_navigation_anchors_resolve(path):
     assert not missing, f"{path.name} has broken navigation anchors: {missing}"
 
 
-@pytest.mark.parametrize("path", _TRANSLATIONS, ids=lambda p: p.name)
-@pytest.mark.parametrize("anchor, english", [("what-you-can-do", "What you can do"), ("platforms", "Platforms")])
-def test_translated_section_anchors_stay_on_their_sections(path, anchor, english):
-    """Adding a section must not leave a saved link pointing at the wrong heading."""
-    source = _FENCE.sub("", (_ROOT / "README.md").read_text(encoding="utf-8"))
-    translated = _FENCE.sub("", path.read_text(encoding="utf-8"))
-    marker = f'<a id="{anchor}"></a>'
-    match = re.search(re.escape(marker) + r"\s*\n(?=## )", translated)
-    assert match, f"{path.name}: #{anchor} must sit directly above a section heading"
-    preceding = len(re.findall(r"^## ", translated[:match.start()], re.MULTILINE))
-    expected = len(re.findall(r"^## ", source[:source.index(f"## {english}\n")], re.MULTILINE))
-    assert preceding == expected, f"{path.name}: #{anchor} is on the wrong section"

@@ -1,3 +1,5 @@
+> **VoiceStudio by Transformaiton.com.** This file is an upstream community translation and is not the maintained guide. Use the [English README](../../README.md). Website: [transformaiton.com](https://transformaiton.com/) · [info@transformaiton.com](mailto:info@transformaiton.com).
+
 <div align="center">
   <h1><sub><img src="../../docs/logo.png" alt="" width="36" height="36" /></sub> VoiceStudio</h1>
   <p>
@@ -10,12 +12,12 @@
   <h3>Kloning, desain suara, sulih suara, dikte, transkripsi, dan narasi dalam 646 bahasa.</h3>
   <p>Berjalan di laptop, desktop, server, ponsel, tablet, dan lainnya</p>
   <p>
-    <a href="https://voicestudio.sh/?utm_source=github&utm_medium=readme&utm_campaign=project">Situs web</a> ·
+    <a href="https://transformaiton.com/">Situs web</a> ·
     <a href="https://github.com/debpalash/VoiceStudio/releases/latest">Unduh</a> ·
     <a href="#get-started">Mulai</a> ·
     <a href="#documentation">Dokumentasi</a> ·
-    <a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project">VoiceStudio Pro</a> ·
-    <a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project">VoiceStudio Cloud</a>
+    <a href="https://transformaiton.com/">VoiceStudio Pro</a> ·
+    <a href="https://transformaiton.com/">VoiceStudio Cloud</a>
   </p>
   <!-- README_LANGUAGES_START -->
   <a id="readme-languages"></a>
@@ -55,8 +57,8 @@
 <p align="center">
   <a href="https://github.com/debpalash/VoiceStudio/releases/latest"><img src="https://img.shields.io/badge/Unduh-993f61?style=for-the-badge&amp;logo=github&amp;logoColor=ffffff" alt="Unduh" height="24" /></a>
   <a href="#get-started"><img src="https://img.shields.io/badge/Mulai-27272a?style=for-the-badge" alt="Mulai" height="24" /></a>
-  <a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=hero-badge"><img src="https://img.shields.io/badge/VoiceStudio%20Pro-27272a?style=for-the-badge" alt="VoiceStudio Pro" height="24" /></a>
-  <a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=hero-badge"><img src="https://img.shields.io/badge/VoiceStudio%20Cloud-27272a?style=for-the-badge" alt="VoiceStudio Cloud" height="24" /></a>
+  <a href="https://transformaiton.com/"><img src="https://img.shields.io/badge/VoiceStudio%20Pro-27272a?style=for-the-badge" alt="VoiceStudio Pro" height="24" /></a>
+  <a href="https://transformaiton.com/"><img src="https://img.shields.io/badge/VoiceStudio%20Cloud-27272a?style=for-the-badge" alt="VoiceStudio Cloud" height="24" /></a>
 </p>
 
 <a id="what-you-can-do"></a>
@@ -117,7 +119,7 @@ Semua yang di atas gratis, berjalan di perangkat keras Anda sendiri, dan tidak m
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section"><img src="../assets/voicestudio-pro.svg" alt="" width="56" height="56" align="middle" /></a>&nbsp;&nbsp;<strong><a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section">VoiceStudio Pro</a></strong><br /><br />
+      <a href="https://transformaiton.com/"><img src="../assets/voicestudio-pro.svg" alt="" width="56" height="56" align="middle" /></a>&nbsp;&nbsp;<strong><a href="https://transformaiton.com/">VoiceStudio Pro</a></strong><br /><br />
       Untuk pekerjaan klien berbayar di lebih dari satu mesin.
       <ul>
         <li>Lisensi Komersial untuk pekerjaan klien Anda, dikirim lewat email</li>
@@ -126,10 +128,10 @@ Semua yang di atas gratis, berjalan di perangkat keras Anda sendiri, dan tidak m
         <li>Fitur dan perbaikan baru lebih dulu</li>
       </ul>
       <sub>Build sumber tertutup, wajib akun, pengembalian dana penuh 7 hari. Aplikasi AGPL-3.0 tetap gratis, termasuk untuk penggunaan komersial sesuai ketentuannya.</sub><br /><br />
-      <strong><a href="https://voicestudio.sh/pro?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section">Lihat paket Pro →</a></strong>
+      <strong><a href="https://transformaiton.com/">Lihat paket Pro →</a></strong>
     </td>
     <td width="50%" valign="top">
-      <a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section"><img src="../assets/voicestudio-cloud.svg" alt="" width="56" height="56" align="middle" /></a>&nbsp;&nbsp;<strong><a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section">VoiceStudio Cloud</a></strong><br /><br />
+      <a href="https://transformaiton.com/"><img src="../assets/voicestudio-cloud.svg" alt="" width="56" height="56" align="middle" /></a>&nbsp;&nbsp;<strong><a href="https://transformaiton.com/">VoiceStudio Cloud</a></strong><br /><br />
       API suara dan sulih suara yang di-hosting, segera hadir. Tanpa perlu GPU.
       <ul>
         <li>Ucapan, desain suara, dan kloning suara dengan persetujuan</li>
@@ -138,7 +140,7 @@ Semua yang di atas gratis, berjalan di perangkat keras Anda sendiri, dan tidak m
         <li>Pekerjaan panjang yang berjalan sendiri</li>
       </ul>
       <sub>Belum tersedia: gabung akses awal untuk kredit penggunaan gratis. Aplikasi desktop tetap gratis dan lokal.</sub><br /><br />
-      <strong><a href="https://app.voicestudio.sh/?utm_source=github&amp;utm_medium=readme&amp;utm_campaign=project&amp;utm_content=readme-section">Gabung akses awal Cloud →</a></strong>
+      <strong><a href="https://transformaiton.com/">Gabung akses awal Cloud →</a></strong>
     </td>
   </tr>
 </table>
