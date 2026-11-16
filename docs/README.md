@@ -1,13 +1,25 @@
-# VoiceStudio documentation
+# VoiceStudio by Transformaiton.com
+
+Customer guides for this copy, in English:
+
+| Need | Guide |
+| --- | --- |
+| Install on Windows, Mac, and Linux | [Install](INSTALL.md) |
+| Clone your own voice for avatar videos | [Voice cloning](VOICE-CLONING-GUIDE.md) |
+| What the app is, hardware, consent, and contact | [Project page](../README.md) |
+
+Modifications by Transformaiton.com, 16 November 2026. The [AGPL-3.0 licence](../LICENSE) and upstream copyright notices are unchanged. Original project: [github.com/debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio). Support for this copy: [info@transformaiton.com](mailto:info@transformaiton.com).
+
+Only clone a voice you own or have permission to use.
 
 ## Use the app
 
 | Need | Guide |
 | --- | --- |
-| Install and troubleshoot | [Platform downloads](../README.md#platforms) · [Troubleshooting](install/troubleshooting.md) · [Upgrade from Tauri](electron-migration.md) |
+| Install and troubleshoot | [Install](INSTALL.md) · [Troubleshooting](install/troubleshooting.md) · [Upgrade from Tauri](electron-migration.md) |
 | Phone apps | [iOS and Android](mobile.md) |
 | Models and hardware | [Engine guides](engines/README.md) · [Model downloads](downloading-models.md) |
-| Speech and cloning | [Voice design](voice-design.md) · [Expressive speech](expressive-speech.md) · [Audio quality](audio-quality.md) |
+| Speech and cloning | [Clone your voice](VOICE-CLONING-GUIDE.md) · [Voice design](voice-design.md) · [Expressive speech](expressive-speech.md) · [Audio quality](audio-quality.md) |
 | Dubbing | [Multi-speaker guide](dubbing/multi-speaker-guide.md) · [Translation](dubbing/translation-engines.md) · [Exports](dubbing/export.md) |
 | Stories and audiobooks | [Longform guide](electron-longform.md) · [Projects](electron-projects.md) |
 | Voices and sharing | [Gallery](electron-gallery.md) · [Persona format](persona-format.md) · [Network sharing](sharing.md) |

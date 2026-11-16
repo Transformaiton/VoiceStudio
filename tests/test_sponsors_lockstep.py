@@ -10,7 +10,9 @@ import pytest
 
 _ROOT = Path(__file__).resolve().parents[1]
 _CONFIG = _ROOT / "electron" / "src" / "shared" / "config" / "sponsors.js"
-_READMES = [_ROOT / "README.md", *sorted((_ROOT / "docs" / "readme").glob("README_*.md"))]
+# The customer README is Transformaiton.com's English guide and does not
+# carry the upstream sponsor logo row. Translated pages keep that row.
+_READMES = sorted((_ROOT / "docs" / "readme").glob("README_*.md"))
 
 _README_REPOSITORIES = {
     "OpenGTM": "/debpalash/OpenGTM",

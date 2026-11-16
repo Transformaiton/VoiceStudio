@@ -1,15 +1,17 @@
-"""VoiceStudio publishes exactly four contact addresses (owner-set 2026-10-02;
-sponsor@ added by the owner in #3674, 2026-10-29).
+"""Published contact addresses.
+
+Upstream VoiceStudio addresses (owner-set 2026-10-02; sponsor@ added in #3674):
 
     hi@voicestudio.sh        general, business, licensing, collaboration
     partner@voicestudio.sh   brand and company partnerships, sponsor receipts
     security@voicestudio.sh  vulnerability reports
     sponsor@voicestudio.sh   sponsorship inquiries
 
-Any other real address in a shipped file (docs, UI, locales, package metadata,
-legal text) is a stale or personal contact. Tests and fixtures may use
-reserved example domains (RFC 2606 / RFC 6761) or fake addresses, and docs may
-show GitHub no-reply commit addresses.
+This Transformaiton.com copy also publishes info@transformaiton.com as the
+customer contact. Any other real address in a shipped file is a stale or
+personal contact. Tests and fixtures may use reserved example domains
+(RFC 2606 / RFC 6761) or fake addresses, and docs may show GitHub no-reply
+commit addresses.
 """
 from __future__ import annotations
 
@@ -23,6 +25,8 @@ _CONTACTS = {
     "partner@voicestudio.sh",
     "security@voicestudio.sh",
     "sponsor@voicestudio.sh",
+    # This fork's customer contact. Upstream addresses above stay published.
+    "info@transformaiton.com",
 }
 _EMAIL = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}")
 _RESERVED_DOMAIN = re.compile(r"(^|\.)(example\.(com|net|org)|example|test|invalid|localhost|local)$", re.I)
